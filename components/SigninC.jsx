@@ -27,6 +27,7 @@ export default function SignIn() {
             
         }else{
             console.log(email , pass)
+            route.replace('/mytrip')
         }
     }
 

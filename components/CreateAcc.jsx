@@ -20,6 +20,7 @@ export default function CreateAcc() {
            <Text style={{fontSize:30 , fontWeight:'bold' , marginBottom:10}}>
                Create New Account
             </Text>
+
             
            </View>
 

@@ -1,12 +1,23 @@
 import { Stack } from "expo-router";
+import {CreateTripContext} from '../context/CreateTrip'
+import { useState } from "react";
+
+
 
 export default function RootLayout() {
+  const[tripData , setTripData] = useState<any>([])
+
   return (
-    <Stack screenOptions={{
+    <CreateTripContext.Provider value={{tripData,setTripData}}>
+      <Stack screenOptions={{
       headerShown : false
     }}>
       {/* <Stack.Screen name="index" /> */}
-      <Stack.Screen name="(tabs)"/>
+      <Stack.Screen options={{
+        headerShown:false
+      }} name="(tabs)"/>
     </Stack>
+    </CreateTripContext.Provider>
+    
   );
 }
