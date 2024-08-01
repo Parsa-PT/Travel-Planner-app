@@ -9,6 +9,7 @@ export default function StartNewTripCard() {
   return (
     <View>
       <View style={{marginTop:60 , display:'flex' , flexDirection:'column' , alignItems:'center' , gap:20}}>
+        
         <Ionicons name="location" size={44} color='black' />
         <Text style={{fontWeight:'bold' , fontSize:25 , marginBottom:10}}>No trips planned yet</Text>
         <Text style={{textAlign:'center'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dignissimos ipsum dolor blanditiis temporibus iure nobis amet quae beatae accusamus incidunt</Text>

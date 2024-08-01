@@ -28,3 +28,24 @@ export const SELECT_TRAVELER = [
         people:'5 to 10 people'
     },
 ]
+
+export const SELECT_BUDGET = [
+    {
+        id:1,
+        title:'Cheap',
+        desc:'consequuntur! Inventore iusto modi',
+        icon:'💵'
+    },
+    {
+        id:2,
+        title:'Moderate',
+        desc:'consequuntur! Inventore iusto modi',
+        icon:'💰'
+    },
+    {
+        id:3,
+        title:'Luxury',
+        desc:'consequuntur! Inventore iusto modi',
+        icon:'💸'
+    },
+]

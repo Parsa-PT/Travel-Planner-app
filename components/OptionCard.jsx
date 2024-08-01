@@ -5,7 +5,7 @@ export default function OptionCard({item, SelectedTraveler}) {
     
 
   return (
-    <View style={[{padding:20 , display:'flex' , flexDirection:'row', justifyContent:'space-between' , alignItems:'center', backgroundColor:'#e0e0e0' , borderRadius:6}, SelectedTraveler?.id==item?.id&&{borderWidth:3 , borderColor:'blue'}]}>
+    <View style={[{padding:20 , display:'flex' , flexDirection:'row', justifyContent:'space-between' , alignItems:'center', backgroundColor:'#e0e0e0' , borderRadius:10}, SelectedTraveler?.id==item?.id&&{borderWidth:3 , borderColor:'green'}]}>
         <View>
             <Text style={{fontSize:20 , fontWeight:'bold'}}>
                 {item.title}

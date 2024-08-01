@@ -1,10 +1,25 @@
 import { View, Text , TouchableOpacity } from 'react-native'
-import React,{useState} from 'react'
+import React,{useState , useEffect , useContext} from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons';
 import StartNewTripCard from '../../components/mytrip/StartNewTripCard';
+import { useRouter } from 'expo-router';
+import { CreateTripContext } from '../../context/CreateTrip';
+import UserTripList from '../../components/mytrip/UserTripList';
 
 export default function mytrip() {
   const [userTrip , setUserTrip] = useState([])
+  const [check , setCheck] = useState(false)
+  const route = useRouter()
+  const { tripData, setTripData } = useContext(CreateTripContext);
+
+
+
+  useEffect(()=>{
+     if(tripData?.build === true){
+      setCheck(true)
+     }
+  },[])
+
 
   return (
     <View style={{
@@ -15,12 +30,16 @@ export default function mytrip() {
         <Text style={{fontSize:35 , fontWeight:'bold'}}>
           My trip
         </Text>
+        <TouchableOpacity onPress={()=> route.push('/create-trip/search-place')}>
         <Ionicons name="add-circle-sharp" size={44}  color="black" />
+
+        </TouchableOpacity>
       </View>
 
-      {userTrip?.length === 0 ?
+      {check === false ?
         <StartNewTripCard/>
-        :null
+        
+        :<UserTripList data={tripData}/>
       }
       
       
