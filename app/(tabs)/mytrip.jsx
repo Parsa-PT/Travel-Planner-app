@@ -38,8 +38,8 @@ export default function mytrip() {
 
       {check === false ?
         <StartNewTripCard/>
-        
-        :<UserTripList data={tripData}/>
+        : <UserTripList data={tripData}/>
+
       }
       
       

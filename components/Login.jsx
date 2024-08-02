@@ -1,4 +1,4 @@
-import { Button, Text, TouchableOpacity, View } from "react-native";
+import { Button, Text, TouchableOpacity, View , ScrollView } from "react-native";
 import { Image } from "react-native";
 import { StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
@@ -10,8 +10,8 @@ export default function Login() {
     const route = useRouter()
 
     return (
-      <View >
-        <View>
+      <ScrollView >
+        <View >
           <Image
             style={{ width: "100%", height: 500 }}
             source={require("../assets/images/travel.jpeg")}
@@ -19,7 +19,7 @@ export default function Login() {
         </View>
         <View style={styles.container}>
           <Text style={{ fontSize: 27, fontWeight: "bold" , marginBottom:20 }}>
-            Make big travel with us
+            Make a big travel
           </Text>
           <Text style={{textAlign:'center' , lineHeight:20 , fontSize:16 , marginBottom:20}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo sjksai  Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</Text>
           <TouchableOpacity onPress={()=> route.push('/mytrip') }>
@@ -38,7 +38,7 @@ export default function Login() {
         </View>
 
            
-      </View>
+      </ScrollView>
     );
   }
 

@@ -49,3 +49,48 @@ export const SELECT_BUDGET = [
         icon:'💸'
     },
 ]
+
+export const HOTEL = [
+    {
+        id:1,
+        title:'Olympic Hotel',
+        pic:require('../assets/images/hotel4.jpg'),
+        star:4.2
+    },
+    {
+        id:2,
+        title:'Espinas Palace',
+        pic:require('../assets/images/hotel2.jpg'),
+        star:3.2
+    },
+    {
+        id:3,
+        title:'Colony Hotel',
+        pic:require('../assets/images/hotel3.webp'),
+        star:3.2
+    },
+    {
+        id:4,
+        title:'Brita Hotel',
+        pic:require('../assets/images/hotel5.webp'),
+        star:3.5
+    },
+]
+export const PLAN = [
+    {
+        id:1,
+        title:'Street Experience',
+    },
+    {
+        id:2,
+        title:'Golden Casino'
+    },
+    {
+        id:3,
+        title:'Neon Museum'
+    },
+    {
+        id:4,
+        title:'Ultra Park'
+    },
+]
